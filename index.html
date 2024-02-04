@@ -3,147 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satyam Fitness</title>
+    <title>Background Changer</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid grey 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white{
+background-color: white;
+        }
+        #aqua{
+background-color: aqua;
+        }
+        #violet{
+background-color: #ce9aff;
+        }
+        #black{
+            background-color: black;
+        }
+        #color-switcher{
+            text-align: right;
+        }
+    </style>
 </head>
-<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-  <style>
-    body{
-      font-family: 'Baloo Bhai', cursive;
-      color: white;
-        margin: 0px;
-        padding: 0px;
-         background: url(gym.png.jpg );
-    }
-    .left{
-      display:  inline;
-      position: absolute;
-      left: 15px;
-      top: 20px;
-    }
-    .left img{
-      width:120px ;
-    }
-     .left.div{
-      line-height: 19px;
-      font-size: 26px;
-      text-align: center;
-     }
-    .mid{
-      display: block;
-      width: 50%;
-     margin: 20px auto;
-      border: 1px solid rgb(41, 43, 182);
-    }
-    .right{
-      position: absolute;
-      right: 34px;
-      top: 20px;
-      display: inline-block;
-      border: 2px solid yellow;
-    }
-    .navbar{
-      display: inline-block;
-
-    }
-    .navbar li{
-      display: inline-block;
-      font-size: 15px;
-    }
-    .navbar li a {
-      color: white;
-      text-decoration: none;
-      padding: 34px 23px;
-    }
-    .navbar li a:hover, .navbar li a.active{
-      text-decoration: underline;
-      color: grey;
-    }
-    .btn{
-      font-family: 'Baloo Bhai', cursive;
-      margin: 0px 9px;
-      background-color: black;
-      color: white;
-      padding: 4px 14px;
-      border: 2px solid grey;
-      border-radius: 10px;
-      font-size: 15px;
-      cursor: pointer;
-    }
-    .btn:hover{
-      background-color: rgb(129, 38, 38);
-    }
-    .container{
-      border: 2px solid white;
-      font-size: 10px;
-      margin: 39px 40px;
-      padding: 25px;
-      width: 33%;
-      border-radius:50px ;
-    }
-    .form-group input{
-      font-family:  'Baloo Bhai', cursive;
-      text-align: center;
-      display: block;
-      width: 400px;
-      padding: 4px;
-      border: 2px solid black;
-      margin: 3px auto;
-      font-size: 20px;
-      border-radius:25px;
-
-    }
-    .container  h1 {
-        text-align: center;
-    }
-    .container  button {
-     display: block;
-     width: 23%;
-     margin: auto;
-    }
-  </style>
 <body>
-    <header class="header">
-      <!--Left box for logo-->
-      <div class="left">
-            <img src="image.jpg.jpg" alt="">
-            <div>Harry Fitness</div>
-          </div>
-          <!--Mid box for navbar-->
-        <div class="mid">
-          <ul class="navbar">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Fitness Calculator</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua"  onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="violet"  onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black"  onclick="changeBG('#000000')"></span>
+
         </div>
-        <!--right box for Buttons-->
-        <div class="right">
-                 <button class="btn">Call Us now</button>
-                 <button class="btn">Email Us</button>             
-      </div>
-    </header>
-    <div class="container">
-       <h1>Join the Best Gym of Delhi Now</h1> 
-       <form action="noaction.php">
-        <div class="form-group">
-          <input type="text" name="" placeholder="Enter your name">
-        </div>
-        <div class="form-group">
-          <input type="text" name="" placeholder="Enter your Age">
-        </div>
-        <div class="form-group">
-          <input type="text" name="" placeholder="Enter your City Gender ">
-        </div>
-        <div class="form-group">
-          <input type="text" name="" placeholder="Enter your locality  ">
-        </div>
-        <div class="form-group">
-          <input type="text" name="" placeholder="Enter your Habits">
-        </div>
-        <button class="btn">Submit</button>
-       </form>
-    </div>
+    <h1 class="text">About Us</h1>
+    <img src="https://tse1.mm.bing.net/th?id=OIP.avb9nDfw3kq7NOoP0grM4wHaEK&pid=Api&rs=1&c=1&qlt=95&h=180" alt="">
+    <p class="text">
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur illo iste iure incidunt. Quos, illum illo. Illo natus tenetur quia cupiditate illum recusandae fuga voluptatum neque, accusamus eligendi repellendus alias, assumenda magni placeat, est commodi a dolor ratione veritatis. Perferendis laudantium temporibus quibusdam error, tempore impedit asperiores quas praesentium animi aperiam sequi explicabo doloribus blanditiis harum, qui quisquam distinctio reiciendis suscipit! Sint sunt tempora ad, repellat molestiae amet perferendis sit earum ipsa! Aut autem quis quidem aliquam numquam ut quas ratione porro, culpa nam deserunt, iusto nisi earum quisquam? Voluptatibus consequatur unde dolorem provident a numquam! Perferendis minima, voluptates eum animi, cupiditate in beatae natus repudiandae sequi ratione et laboriosam repellat laborum facilis, minus doloremque ea itaque. Unde eveniet excepturi saepe repudiandae repellendus quod rem illo dolorem quae aperiam consequuntur ipsam voluptate odio, neque deserunt! Ut excepturi autem non ducimus dignissimos, magni consectetur. Aut magni tenetur vero nobis cum! Maiores neque aspernatur et deleniti perspiciatis? Ipsam quia doloremque, enim, excepturi eaque rem similique quo nesciunt itaque, sequi assumenda reiciendis. Harum ipsum, totam quasi dignissimos voluptatum reiciendis suscipit magni hic dolore architecto sapiente officiis ex modi veniam ea optio mollitia accusamus fugiat eum sint temporibus officia nostrum dolorum tempore! Eius magni error, culpa eum nostrum nam mollitia tempore assumenda consectetur laboriosam, odio neque fugit esse facilis debitis quos odit magnam? Corporis necessitatibus vero aspernatur obcaecati molestiae cum omnis beatae, sed quo nisi ratione, ea reprehenderit iusto labore eos in excepturi nihil? Deserunt minima laudantium modi assumenda, nisi sequi nostrum enim natus excepturi sit, delectus fugiat doloribus saepe eum eos? Repudiandae magni ut consequatur inventore distinctio, maiores blanditiis sit rem debitis eaque quos veritatis est omnis odio? Eos corrupti quis labore sunt porro iusto quam recusandae minus, reiciendis veniam, consectetur fugiat sapiente, sed officia. Illo non aperiam eveniet consequuntur eaque velit, recusandae, sit iure eos tempore quae esse nobis placeat atque iste eius officiis, ea facere labore! Velit vitae aliquam vel expedita, ea quod quidem deserunt veniam maxime asperiores. Consequuntur, voluptatem quis minus vel ipsum illo consectetur quaerat repellat nihil saepe similique accusamus. Sint quo deleniti modi tenetur, excepturi possimus quia incidunt rerum. Odio vero laboriosam eius earum magni, eum praesentium expedita, perspiciatis error sunt, molestiae a! Corporis aliquam sint dolores voluptatem ratione tenetur cumque aperiam commodi ex fugit repudiandae minus ad, deserunt laborum perspiciatis incidunt. Quidem, nobis pariatur provident ut debitis itaque possimus ad. Pariatur eos repudiandae consequuntur impedit non quod vero alias quasi minus, numquam nemo reprehenderit, ipsum sunt odio libero dignissimos doloribus ex nisi, incidunt hic ducimus temporibus repellendus? Ea rerum accusamus nam exercitationem sit ut a eum sint eos perferendis obcaecati soluta ab fugiat quidem eius, veritatis, nobis possimus! Corrupti voluptas, consectetur fugiat quae suscipit alias nobis aliquam, magni autem, tenetur eos illo dolorem delectus sint aspernatur non corporis animi iure in neque voluptatum libero! Sed magnam excepturi soluta porro quas aliquam? Inventore esse sed, quos excepturi quasi provident a saepe deleniti optio totam sapiente temporibus vitae quia sequi neque ut quo autem fugit! Nisi, soluta quod
+</p>
+
+<script>
+function changeBG(color) {
+    document.body.style.backgroundColor = color;
+    let txt = document.getElementsByClassName("text");
+    if(color == "#000000") {
+        for(let elm of txt) {
+            elm.style.color = "white";
+        }
+    }else{
+        for(let elm of txt) {
+            elm.style.color = "black";
+        } 
+    }
+}
+</script>
 </body>
 </html>
